@@ -6,15 +6,14 @@ def task():
     pass
     #------- пишите код здесь -----
     r.up()
-    if r.wd()
-        r.dn()
-        r.dn()
-        if r.wd():
-            r.up()
-            r.pt('red')
+    if r.cl()=='red':
+        if r.wu():
+            r.dn()
+            r.pt()
         else:
-            r.lt()
-        
+            r.dn()
+    else:
+        r.dn()
     #------- пишите код здесь -----
 r.start(task)
 
