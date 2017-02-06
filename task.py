@@ -1,17 +1,31 @@
 #-*- coding: utf-8 -*
 import robot
 r = robot.rmap()
-r.lm('task3-5')
+r.lm('task3-9')
 def task():
     pass
     #------- пишите код здесь -----
     r.up()
     if r.cl():
-        color=r.cl()
         r.dn()
-        r.pt(color)
+        r.lt()
+        if r.cl():
+            r.rt()
+            r.dn()
+            if r.cl():
+                r.up()
+                r.rt()
+                if r.cl():
+                    r.lt()
+                    r.pt()
+                else:
+                    r.lt()
+            else:
+                r.up()
+        else:
+            r.rt()
     else:
-        r.dn()
+        r.dn()   
     #------- пишите код здесь -----
 r.start(task)
 
