@@ -6,12 +6,9 @@ def task():
     pass
     #------- пишите код здесь -----
     r.up()
-    if r.cl()=='red':
-        if r.wu():
-            r.dn()
-            r.pt()
-        else:
-            r.dn()
+    if r.cl()=='red' and r.wu():
+        r.dn()
+        r.pt()
     else:
         r.dn()
     #------- пишите код здесь -----
