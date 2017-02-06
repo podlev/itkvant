@@ -6,19 +6,11 @@ def task():
     pass
     #------- пишите код здесь -----
     r.up()
-    if r.cl()=='red':
+    if r.cl():
+        color=r.cl()
         r.dn()
-        r.pt('red')
-    if r.cl()=='yellow':
-        r.dn()
-        r.pt('yellow')
-    if r.cl()=='cyan':
-        r.dn()
-        r.pt('cyan')
-    if r.cl()=='magenta':
-        r.dn()
-        r.pt('magenta')
-    if not r.cl():
+        r.pt(color)
+    else:
         r.dn()
     #------- пишите код здесь -----
 r.start(task)
